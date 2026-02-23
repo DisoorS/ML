@@ -1,6 +1,4 @@
 import pandas as pd
-from sklearn.feature_selection import chi2
-from sklearn.preprocessing import minmax_scale
 
 df = pd.read_csv("preprocessedDataregression.csv")
 df.drop(columns=["Unnamed: 0"] , inplace=True)
