@@ -11,7 +11,6 @@ y = df["Price"]
 scaler = minmax_scale(X, feature_range=(0, 1))
 X_scaled = pd.DataFrame(scaler, columns=X.columns)
 X_selected = X_scaled[["Memory", "Company"]]
-print(X_selected)
 chi2_scores, p_values = chi2(X_selected, y)
 print("Chi-squared scores:", chi2_scores)
 print("P-values:", p_values)
