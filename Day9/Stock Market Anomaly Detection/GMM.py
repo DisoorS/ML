@@ -1,5 +1,4 @@
 import pandas as pd
-import numpy as np
 from sklearn.covariance import log_likelihood
 from sklearn.mixture import GaussianMixture
 
